@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdotaAí – Adoção de Pets</title>
+</head>
+
+<body>
+    <header>
+        <h1>AdotaAí – Projeto Social de Adoção de Pets</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="catalogo.html">Nossos PETS</a> |
+        <b>SAC</b> |
+        <a href="equipe.html">Equipe</a>
+    </nav>
+    
+    <main>
+        <h2>Fale Conosco</h2>
+        <p>Preencha o formulário abaixo para entrar em contato com nossa equipe.</p>
+
+        <form id="formularioContato" action="#" method="post">
+
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="text" id="email" name="email" required><br><br>
+
+            <label for="assunto">Assunto:</label><br>
+            <input type="text" id="assunto" name="assunto" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+        <script>
+            document.getElementById('formularioContato').addEventListener('submit', function (event) {
+                // 1. Impede que o formulário recarregue a página
+                event.preventDefault();
+
+                // 2. Apaga todos os campos do formulário
+                this.reset();
+
+            });
+        </script>
+
+    </main>
+    <footer>
+        <p>
+            &copy; 2025 AdotaAí – Projeto social de adoção de pets. Todos os direitos reservados.
+        </p>
+        <p>
+            Este projeto é uma ferramenta educacional e não comercial. As informações e imagens de filmes são utilizadas
+            para fins de demonstração, aprendizado e ilustração de conceitos de desenvolvimento web.
+        </p>
+    </footer>
+</body>
+
+</html>
