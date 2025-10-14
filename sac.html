@@ -5,40 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdotaAí – Adoção de Pets</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>AdotaAí – Projeto Social de Adoção de Pets</h1>
+        <img src="img/logo_pet-removebg-preview.png" alt="Logo" class="logo">
+        <nav>
+            <a class="itensNav" href="index.html">Home</a>
+            <a class="itensNav" href="catalogo.html">Nossos PETS</a>
+            <b class="itensNav">SAC</b>
+            <a class="itensNav" href="equipe.html">Equipe</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="catalogo.html">Nossos PETS</a> |
-        <b>SAC</b> |
-        <a href="equipe.html">Equipe</a>
-    </nav>
-    
-    <main>
-        <h2>Fale Conosco</h2>
-        <p>Preencha o formulário abaixo para entrar em contato com nossa equipe.</p>
+    <main class="mainSac">
+        <h1 class="tituloPagina">Fale Conosco</h1>
+        <p class="preenchaFormulario">Preencha o formulário abaixo para entrar em contato com nossa equipe.</p>
 
-        <form id="formularioContato" action="#" method="post">
+        <form action="#" method="post">
 
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" required><br><br>
+            <div class="field">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
 
-            <label for="email">E-mail:</label><br>
-            <input type="text" id="email" name="email" required><br><br>
+            <div class="field">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
 
-            <label for="assunto">Assunto:</label><br>
-            <input type="text" id="assunto" name="assunto" required><br><br>
+            <div class="field">
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto" required>
+            </div>
 
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+            <div class="field">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+            </div>
 
-            <input type="submit" value="Enviar">
+            <button class="botao-enviar" type="submit">Enviar</button>
         </form>
+
         <script>
             document.getElementById('formularioContato').addEventListener('submit', function (event) {
                 // 1. Impede que o formulário recarregue a página
