@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdotaAí – Adoção de Pets</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -16,6 +16,7 @@
             <b class="itensNav">Nossos PETS</b>
             <a class="itensNav" href="sac.html">SAC</a>
             <a class="itensNav" href="equipe.html">Equipe</a>
+            <a id="alternar-tema" class="alternar-tema" href="#">🌙</a>
         </nav>
     </header>
     <main class="catalogo">
@@ -34,46 +35,9 @@
                     <th>História</th>
                 </tr>
             </thead>
-            <tr>
-                <td><img src="img/pet1.jpg" alt="Cachorro Jorge" width="300"></td>
-                <td>Jorge</td>
-                <td>5 anos</td>
-                <td>Jorge é um caramelo muito brincalhão e cheio de energia.
-                    Adora correr atrás da bolinha e receber carinho na barriga.
-                    Precisa de uma família que goste de passeios e brincadeiras ao ar livre.</td>
-            </tr>
-            <tr>
-                <td><img src="img/pet2.webp" alt="Cadela Marina" width="300"></td>
-                <td>Marina</td>
-                <td>4 anos</td>
-                <td>Marina é uma cadela muito forte e carinhosa.
-                    Foi resgatada de situação de abandono, mas nunca perdeu a doçura.
-                    Ama crianças e se dá bem com outros cães.</td>
-            </tr>
-            <tr>
-                <td><img src="img/pet3.jpg" alt="Cachorro Orelinha" width="300"></td>
-                <td>Orelinha</td>
-                <td>2 anos</td>
-                <td>Orelinha é cheio de vida e adora brincar.
-                    Ganhou esse nome por causa de sua orelha levantada que encantam a todos.
-                    É um ótimo companheiro para quem busca alegria e amizade fiel.</td>
-            </tr>
-            <tr>
-                <td><img src="img/pet4.jpg" alt="Cadela Joana" width="300"></td>
-                <td>Joana</td>
-                <td>6 anos</td>
-                <td>Joana é uma cadela calma e muito dócil.
-                    Ideal para quem procura um pet tranquilo e carinhoso.
-                    Gosta de cochilar ao sol e receber cafuné.</td>
-            </tr>
-            <tr>
-                <td><img src="img/pet5.jpg" alt="Cachorro Mário" width="300"></td>
-                <td>Mário</td>
-                <td>9 anos</td>
-                <td>Mário é um cãozinho idoso, mas cheio de amor para dar.
-                    Foi resgatado após anos de abandono e agora sonha com um lar acolhedor
-                    para passar sua melhor fase de vida com conforto e carinho.</td>
-            </tr>
+            <tbody id="listaPets">
+
+            </tbody>
         </table>
     </main>
     <footer>
@@ -85,6 +49,8 @@
             para fins de demonstração, aprendizado e ilustração de conceitos de desenvolvimento web.
         </p>
     </footer>
+    <script src="js/carrega_dados.js"></script>
+    <script src="js/tema.js"></script>
 </body>
 
 </html>

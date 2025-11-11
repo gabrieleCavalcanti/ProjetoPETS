@@ -50,6 +50,64 @@ nav {
     border-bottom: 2px solid #fc6d9d;
 }
 
+/* ============================
+   Tema
+============================ */
+
+.alternar-tema {
+  margin-left: 18px;
+  text-decoration: none;
+  background-color: #ffbb33;
+  color: #222;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  display: inline-block;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+.alternar-tema:hover {
+  background-color: #ffaa00;
+  transform: translateY(-2px);
+}
+
+.modo-escuro {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.modo-escuro header,
+.modo-escuro footer {
+  background-color: #1e1e1e;
+  color: #868484;
+}
+
+.modo-escuro .alternar-tema {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+.modo-escuro .alternar-tema:hover {
+  background-color: #555;
+}
+
+.modo-escuro main {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+.modo-escuro .mainIndex {
+    background-color: #121212;
+}
+
+.modo-escuro .catalogo tr:nth-child(even) {
+    background-color:rgb(41, 41, 41);
+}
+.modo-escuro .field input,
+.modo-escuro .field textarea {
+    background-color: rgb(207, 206, 206);
+}
+
 
 /* ============================
    INDEX
@@ -154,69 +212,106 @@ nav {
    SAC
 ============================ */
 .mainSac {
-    max-width: 1100px;
-    margin: 40px auto;
-    background-color: #ffffe7;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
-    padding: 30px 40px;
+    max-width: 900px;
+    margin: 60px auto;
+    background-color: #fffef5;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 50px 60px;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* Título */
 .tituloPagina {
     color: #f5b800;
-    font-size: 50px;
-    margin: 40px 0 10px;
+    font-size: 48px;
+    margin-bottom: 10px;
     text-align: center;
     font-family: 'Cherry Bomb One', cursive;
 }
 
+/* Subtítulo */
 .preenchaFormulario {
     color: #d94fb3;
     text-align: center;
-    margin-bottom: 30px;
+    font-size: 17px;
+    margin-bottom: 40px;
 }
 
+/* Formulário */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
+/* Campos */
 .field {
-    width: 60%;
-    max-width: 420px;
-    margin-bottom: 22px;
-}
-
-.field input,
-.field textarea {
     width: 100%;
-    padding: 14px 10px;
-    border: 1.5px solid #666;
-    border-radius: 4px;
-    font-size: 16px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 .field label {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 15px;
-    color: #000;
+    color: #333;
+    margin-bottom: 6px;
 }
 
-button {
-    padding: 10px 25px;
+/* Inputs e Textareas */
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
     font-size: 16px;
-    border: 1.5px solid #333;
-    border-radius: 5px;
-    background: #eee;
+    transition: all 0.25s ease;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Foco e interação */
+.field input:focus,
+.field textarea:focus {
+    border-color: #f5b800;
+    outline: none;
+    box-shadow: 0 0 6px rgba(245, 184, 0, 0.3);
+    background-color: #fffef0;
+}
+
+/* Mensagens de erro */
+.msg-erro {
+    color: #d94fb3;
+    font-size: 13px;
+    margin-top: 4px;
+    min-height: 14px;
+}
+
+/* Botão */
+.botao-enviar {
+    padding: 12px 40px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #f5b800, #ffcc33);
     cursor: pointer;
-    transition: 0.2s;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-button:hover {
-    background: #dcdcdc;
+.botao-enviar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(245, 184, 0, 0.3);
 }
 
+.botao-enviar:active {
+    transform: scale(0.98);
+}
 
 /* ============================
    EQUIPE

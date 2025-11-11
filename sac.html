@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdotaAí – Adoção de Pets</title>
-    <link rel="stylesheet" href="style.css">
+    <title>AdotaAí – SAC</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -16,6 +16,7 @@
             <a class="itensNav" href="catalogo.html">Nossos PETS</a>
             <b class="itensNav">SAC</b>
             <a class="itensNav" href="equipe.html">Equipe</a>
+            <a id="alternar-tema" class="alternar-tema" href="#">🌙</a>
         </nav>
     </header>
 
@@ -23,7 +24,7 @@
         <h1 class="tituloPagina">Fale Conosco</h1>
         <p class="preenchaFormulario">Preencha o formulário abaixo para entrar em contato com nossa equipe.</p>
 
-        <form action="#" method="post">
+        <form id="form-contato" novalidate>
 
             <div class="field">
                 <label for="nome">Nome:</label>
@@ -33,11 +34,18 @@
             <div class="field">
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                <!-- <p class="msg-erro" id="erro-email"></p> -->
+            </div>
+
+            <div class="field">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="999.999.999-99" required>
+                <!-- <p class="msg-erro" id="erro-cpf"></p> -->
             </div>
 
             <div class="field">
                 <label for="assunto">Assunto:</label>
-                <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto" required>
+                <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto">
             </div>
 
             <div class="field">
@@ -47,17 +55,6 @@
 
             <button class="botao-enviar" type="submit">Enviar</button>
         </form>
-
-        <script>
-            document.getElementById('formularioContato').addEventListener('submit', function (event) {
-                // 1. Impede que o formulário recarregue a página
-                event.preventDefault();
-
-                // 2. Apaga todos os campos do formulário
-                this.reset();
-
-            });
-        </script>
 
     </main>
     <footer>
@@ -69,6 +66,9 @@
             para fins de demonstração, aprendizado e ilustração de conceitos de desenvolvimento web.
         </p>
     </footer>
+
+    <script src="js/validacao.js"></script>
+    <script src="js/tema.js"></script>
 </body>
 
 </html>

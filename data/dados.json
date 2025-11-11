@@ -1,0 +1,47 @@
+[
+    {
+        "imagem": {
+            "src": "img/pet1.jpg",
+            "alt": "Foto do cão Jorge"
+        },
+        "nome": "Jorge",
+        "idade": "5 anos",
+        "historia": "Jorge é um caramelo muito brincalhão e cheio de energia. Adora correr atrás da bolinha e receber carinho na barriga. Precisa de uma família que goste de passeios e brincadeiras ao ar livre."
+    },
+    {
+        "imagem": {
+            "src": "img/pet2.webp",
+            "alt": "Foto da cadela Marina"
+        },
+        "nome": "Marina",
+        "idade": "4 anos",
+        "historia": "Marina é uma cadela muito forte e carinhosa. Foi resgatada de situação de abandono, mas nunca perdeu a doçura. Ama crianças e se dá bem com outros cães."
+    },
+    {
+        "imagem": {
+            "src": "img/pet3.jpg",
+            "alt": "Foto do cão Orelinha"
+        },
+        "nome": "Orelinha",
+        "idade": "2 anos",
+        "historia": "Orelinha é cheio de vida e adora brincar. Ganhou esse nome por causa de sua orelha levantada que encanta a todos. É um ótimo companheiro para quem busca alegria e amizade fiel."
+    },
+    {
+        "imagem": {
+            "src": "img/pet4.jpg",
+            "alt": "Foto da cadela Joana"
+        },
+        "nome": "Joana",
+        "idade": "6 anos",
+        "historia": "Joana é uma cadela calma e muito dócil. Ideal para quem procura um pet tranquilo e carinhoso. Gosta de cochilar ao sol e receber cafuné."
+    },
+    {
+        "imagem": {
+            "src": "img/pet5.jpg",
+            "alt": "Foto do cão Mário"
+        },
+        "nome": "Mário",
+        "idade": "9 anos",
+        "historia": "Mário é um cãozinho idoso, mas cheio de amor para dar. Foi resgatado após anos de abandono e agora sonha com um lar acolhedor para passar sua melhor fase de vida com conforto e carinho."
+    }
+]
